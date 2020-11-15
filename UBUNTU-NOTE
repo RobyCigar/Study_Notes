@@ -1,0 +1,51 @@
+#TERMINAL COMMANDS
+
+
+>Remove dir/ file
+	rm -rfv dirname
+
+
+>manual
+man sudo_root
+
+>instal git
+sudo apt install git
+
+>install pip
+apt install python3-pip
+
+>instal virtual env
+apt install python3-virtualenv
+source myenv/bin/activate
+BY COREY
+sudo apt-get install python3-venv
+which python
+pip freeze > requirements.txt
+deactivate
+rm -rf Project_env/
+>>biasannya
+mkdir <nama project>
+python3 -m venv <namaproject/venv>
+source <nama project>/venv/bin/activate
+#klo mau install requirement.txt
+pip install -r requirements.txt
+pip list local
+
+>install nodejs & npm
+sudo apt install nodejs
+sudo apt install npm
+
+>installed package
+comm -23 <(apt-mark showmanual | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)
+
+
+>make dock to bottom center
+	gsettings set com.canonical.Unity.Launcher launcher-position bottom
+
+
+>Installing Katoolin
+	https://ostechnix.com/install-kali-linux-tools-using-katoolin3-in-ubuntu-20-04-lts/
+	
+>Installing react 
+	sudo npm uninstall -g react-devtools
+

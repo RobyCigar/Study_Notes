@@ -1,0 +1,32 @@
+TUTORIAL BY COREY SCHAFER
+
+> Creating an admin user
+	python3 manage.py createsuperuser
+	Username:ngebelcilik, user1
+	Email:
+	Password: Halo;admin;... Halo;user;...
+
+> When we type makemigrations, a file comes up on migration dir
+	python3 manage.py sqlmigrate Blog 0001
+	python3 manage.py migrate	
+		
+> Django Shell || ORM Object Relation Mapper
+	from Blog.models import Post
+	from django.contrib.auth.models import User
+	User.objects.all()
+	user = User.objects.filter(username='admin').first()
+	user.id / user.pk <primary key>/ 
+	Post.objects.all()
+	post_1 = Post(title = 'Happinese is a butterfly', content = 'Lorem ipsum bla bla ', author= user)
+	post_1.save()
+	Post.objects.all()
+	post = Post.object.first()
+	post.content/author/id
+	<Alternative>
+	.modelname_set
+	user = User.objects.filter(username = 'admin').first()
+	user.post_set / user.post_set.all()
+	user.post_set.create(title = "Blog3", bla bla)
+
+> install django-crispy-forms to make form more beautiful
+	go to setting

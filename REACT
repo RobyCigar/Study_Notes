@@ -1,0 +1,62 @@
+REACT by Codevolution
+
+>Create the apps
+	yarn create react-app my-app
+	npx create-react-app <proj name>
+
+>clear cache 
+	npm cache clean --force
+
+>start the app
+	$ npm start
+	
+>Yarn
+	yarn add create-react-app 
+	yarn start
+	yarn create react-app project-name --use-pnp
+
+>Package you should add
+	yarn add react-refresh
+	yarn add eslint-config-react-app
+
+> redux 
+	yarn add redux react-redux
+
+
+import {createStore} from 'redux';
+
+
+
+// ACTION INCREMENT
+const increment = () => {
+	return {
+		type:'INCREMENt',
+	}
+}
+
+const decrement = () => {
+	return {
+		type:'DECREMENt',
+	}
+}
+
+// REDUCER
+
+const counter = (state = 0, action) => {
+	switch(action.type){
+		case 'INCREMENt':
+			return state + 1;
+		case 'DECREMENt':		
+			return state - 1;
+	}
+}
+// STORE
+let store = createStore(counter)
+store.subscribe(() => console.log(store.getState()))
+// DISPATCH
+
+store.dispatch(increment())
+
+
+//USING SEPARATE FILES
+
