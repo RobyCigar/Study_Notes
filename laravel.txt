@@ -1,0 +1,26 @@
+>>change view
+	php artisan make:auth
+	php artisan ui:auth
+
+>> npm 
+	npm install
+	npm run dev
+
+>>create new proj	
+	composer create-project --prefer-dist laravel/laravel Lara_tuts
+	laravel new <proj>
+
+>>spec controller
+	php artisan make:controller MahasiswaController --resource
+>>undo migrate
+	php artisan migrate:rollback
+	
+>>
+	php artisan make:migration create_students_table
+
+
+>>auth
+composer require laravel/ui
+php artisan ui vue --auth
+npm install
+npm run dev

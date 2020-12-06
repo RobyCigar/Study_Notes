@@ -1,0 +1,46 @@
+sudo service mysql status
+
+show databases
+
+create data <namadb>
+
+use <namadb>
+
+create table <namatab>
+
+describe <namatab>
+
+>> insert data
+insert into <namatab> values (<value with string>);
+
+>> show data
+select * from <namatab>
+select nim, nama from <namatab>
+
+select * from <namatab> where nrp = '10929';
+
+>> change data
+update <namatab> set jurusan = 'teknik mesin' where id= 2;
+
+delete from <namatab> where id = 3;
+
+>> delete table
+drop table <namatab>
+
+>> delete db
+drop database <namadb>
+
+
+
+
+
+
+
+
+>> db table
+id int(3) primary key auto_increment
+nama varvhar(100) 
+nim varchar(100)
+jurusan varchar(100)
+
+

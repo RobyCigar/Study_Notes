@@ -1,0 +1,17 @@
+>>Start php server
+php -S localhost:8000
+
+>>Fetch
+
+mysqli_fetch_row() //return index array
+mysqli_fetch_assoc() //return array associative
+mysqli_fetch_array()
+mysqli_fetch_object()
+
+
+#R)GLO4Zp6SRG8thQivP
+
+
+DBku
+admin
+Haloadmin123-
