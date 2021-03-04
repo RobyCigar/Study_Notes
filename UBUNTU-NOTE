@@ -49,3 +49,13 @@ comm -23 <(apt-mark showmanual | sort -u) <(gzip -dc /var/log/installer/initial-
 >Installing react 
 	sudo npm uninstall -g react-devtools
 
+>POSTGRESQL
+sudo -u postgres -i
+postgres=# CREATE USER rabih WITH SUPERUSER PASSWORD 'rabih123'
+
+
+
+
+
+
+

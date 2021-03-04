@@ -1,0 +1,27 @@
+\l 
+	list database
+
+
+\c database_name
+
+\dt
+
+OR
+
+\dt+  (Show descriptive output of show tables)
+
+2. Show specific schema tables
+
+\dt shema_name.*
+
+OR
+
+\dt+ shema_name.*   (Show descriptive output of show tables)
+
+3. Show all schema tables
+
+SELECT *(Show all rows from pg_tables) FROM pg_catalog.pg_tables;
+
+OR
+
+\dt *.* (All schema and all tables)
